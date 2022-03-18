@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="
+       http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
+      ">
+
+    <!--加载外部的 properties 文件-->
+    <!--将外部的 jdbc.properties 配置文件加载到了 resource 里面去-->
+    <!--在这个位置将 数据路连接的配置文件加载进来，下面只是需要使用 ${} 的形式将参数确定下来-->
+<!--    <context:property-placeholder location="classpath:jdbc.properties"/>-->
+
+<!--    <bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource">-->
+<!--        &lt;!&ndash;使用 set 方法进行参数的注入&ndash;&gt;-->
+<!--        &lt;!&ndash;进行参数的注入&ndash;&gt;-->
+<!--        &lt;!&ndash;name 是 setDriverClass 的 DriverClass 第一个字母的小写&ndash;&gt;-->
+<!--        <property name="driverClass" value="${jdbc.driver}"></property>-->
+<!--        <property name="jdbcUrl" value="${jdbc.url}"></property>-->
+<!--        <property name="user" value="${jdbc.username}"></property>-->
+<!--        <property name="password" value="${jdbc.password}"></property>-->
+<!--    </bean>-->
+
+    <!--使用注解进行开发的时候 配置组件扫描，指定哪儿个包以及其子包下的 bean 需要进行扫描以便识别使用注解配置的类-->
+    <!--告诉 Spring 扫描写的代码，找到注解的位置，创建相关的对象，并且实现注入，方便我再后面直接调用方法-->
+<!--    <context:component-scan base-package="com.luobin"></context:component-scan>-->
+</beans>

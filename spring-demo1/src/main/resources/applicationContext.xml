@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <!--约定俗称这个名字 applicationContext-->
+    <!--id 与class 里面的实现类进行绑定，以后 spring 可以通过 id 创建 class 里面的 UserDaoImpl 类，实现控制反转，也就是创建类让 spring 框架来完成，不需要程序员自己来创建类 -->
+    <!--    <bean id="userDao" class="com.luobin.dao.impl.UserDaoImpl"></bean>-->
+
+    <!--set 方法注入，将 dao 注入到 service -->
+    <!--    <bean id="userService" class="com.luobin.service.impl.UserServiceImpl">-->
+    <!--        &lt;!&ndash;配置文件完成 UserDao 注入到 UserService name 属性是 set 方法后面的内容，并且将 setUserDao 中的 UserDao 第一个字母变成小写&ndash;&gt;-->
+    <!--        &lt;!&ndash;ref 表示的是注入的 id 和上面的 UserDao 的 id 进行绑定,绑定之后完成注入&ndash;&gt;-->
+    <!--        <property name="userDao" ref="userDao"></property>-->
+    <!--    </bean>-->
+
+
+    <!--构造方法注入 把 dao 注入到 service 层-->
+    <bean id="userService" class="com.luobin.service.impl.UserServiceImpl">
+        <!--name 是构造方法的参数名字-->
+        <!--ref 表示的是下面的引用容器中的 <bean> 里面 dao  的id 作为依赖注入-->
+        <constructor-arg name="userDao" ref="userDao"></constructor-arg>
+    </bean>
+
+    <!--集合注入 把集合注入到 dao层-->
+    <bean id="userDao" class="com.luobin.dao.impl.UserDaoImpl">
+        <!--name： 注入的数据类型创建出来的变量名-->
+        <property name="strList">
+            <list>
+                <value>aaa</value>
+                <value>bbb</value>
+                <value>ccc</value>
+            </list>
+        </property>
+
+        <property name="userMap">
+            <map>
+                <entry key="u1" value-ref="user1"></entry>
+                <entry key="u2" value-ref="user2"></entry>
+            </map>
+        </property>
+
+        <property name="properties">
+            <props>
+                <prop key="p1">ppp1</prop>
+                <prop key="p2">ppp2</prop>
+                <prop key="p3">ppp3</prop>
+            </props>
+        </property>
+    </bean>
+
+    <!--为了配合上面的 map 注入，因为注入的是对象，这里需要创建对象-->
+    <bean id="user1" class="com.luobin.domain.User">
+        <!--在 User 类里面也是存在 get set 方法的，这里可以把数值注入进去 -->
+        <property name="name" value="tom"/>
+        <property name="addr" value="tianjin"/>
+    </bean>
+
+    <bean id="user2" class="com.luobin.domain.User">
+        <!--在 User 类里面也是存在 get set 方法的，这里可以把数值注入进去 -->
+        <property name="name" value="lucy"/>
+        <property name="addr" value="beijing"/>
+    </bean>
+</beans>
