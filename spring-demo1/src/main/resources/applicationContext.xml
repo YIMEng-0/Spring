@@ -6,12 +6,12 @@
     <!--id 与class 里面的实现类进行绑定，以后 spring 可以通过 id 创建 class 里面的 UserDaoImpl 类，实现控制反转，也就是创建类让 spring 框架来完成，不需要程序员自己来创建类 -->
     <!--    <bean id="userDao" class="com.luobin.dao.impl.UserDaoImpl"></bean>-->
 
-    <!--set 方法注入，将 dao 注入到 service -->
-    <!--    <bean id="userService" class="com.luobin.service.impl.UserServiceImpl">-->
-    <!--        &lt;!&ndash;配置文件完成 UserDao 注入到 UserService name 属性是 set 方法后面的内容，并且将 setUserDao 中的 UserDao 第一个字母变成小写&ndash;&gt;-->
-    <!--        &lt;!&ndash;ref 表示的是注入的 id 和上面的 UserDao 的 id 进行绑定,绑定之后完成注入&ndash;&gt;-->
-    <!--        <property name="userDao" ref="userDao"></property>-->
-    <!--    </bean>-->
+<!--    set 方法注入，将 dao 注入到 service -->
+<!--        <bean id="userService" class="com.luobin.service.impl.UserServiceImpl">-->
+<!--            &lt;!&ndash;配置文件完成 UserDao 注入到 UserService name 属性是 set 方法后面的内容，并且将 setUserDao 中的 UserDao 第一个字母变成小写&ndash;&gt;-->
+<!--            &lt;!&ndash;ref 表示的是注入的 id 和上面的 UserDao 的 id 进行绑定,绑定之后完成注入&ndash;&gt;-->
+<!--            <property name="userDao" ref="userDao"></property>-->
+<!--        </bean>-->
 
 
     <!--构造方法注入 把 dao 注入到 service 层-->

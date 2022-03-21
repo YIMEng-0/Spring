@@ -13,22 +13,11 @@ import org.springframework.stereotype.Service;
  * @version 1.0
  */
 
-/**
- *     <bean id="userService" class="com.luobin.service.impl.UserServiceImpl">
- *         <!--name setUserDao 的后面单词的前一个小写，表示使用 set 方法进行对象的注入，从哪儿个方法进行注入-->
- *         <!--ref 表示注入 具体的对象是什么-->
- *         <property name="userDao" ref="userDao"></property>
- *     </bean>
- *
- *     原来的创建对象以及对象的注入基于配置文件，为了简化开发，这里使用注解的形式
- */
 @Service("userService")
 public class UserServiceImpl implements UserService {
     /**
      * 将普通的数值进行注入,所谓的注入就是赋值？减少相互之间的依赖关系，解耦合
      */
-    @Value("${jdbc.driver}")
-    private String driver;
 
     /**
      * Autowired 按照数据类型从 Spring 容器中进行匹配
@@ -53,7 +42,5 @@ public class UserServiceImpl implements UserService {
     public void save() {
         // 调用数据库的 save 方法
         userDao.save();
-
-        System.out.println("driver 的数值是：" + driver);
     }
 }

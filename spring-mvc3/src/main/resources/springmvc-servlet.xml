@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context
+        https://www.springframework.org/schema/context/spring-context.xsd
+        http://www.springframework.org/schema/mvc
+        https://www.springframework.org/schema/mvc/spring-mvc.xsd">
+
+    <!--上面的各种标签位置的变动也是有可能使得启动服务器失败的-->
+    <!--xmlns:xsi 当前的 xml 文件需要遵循的规范-->
+    <!--context mvc 当前 xml 需要使用的标签，进行标签的引用，和 jar 包的引用类似，等号右边是引用的标签遵守的规范-->
+    <!--xsi:schemaLocation-->
+    <!--xsi:schemaLocation，上面引用的指定文件的验证文件，保证标签书写的规范化-->
+
+
+    <!--Spring MVC 的项目直接使用下面的配置即可，不需要修改-->
+
+
+    <!--扫描包，扫描包里面的注解，使用注解进行开发，扫描控制器的位置-->
+    <context:component-scan base-package="com.luobin.controller"/>
+
+    <!--原来的映射以及适配器，使用这个就可以代替掉 省略掉前面配置的处理器以及配置器-->
+    <mvc:annotation-driven/>
+
+    <!--过滤掉前端的一些没有用的文件 .css .js 等-->
+    <mvc:default-servlet-handler/>
+
+    <!--进行返回时候的页面文件的拼接-->
+    <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver" id="internalResourceViewResolver">
+        <property name="prefix" value="/WEB-INF/jsp/"/>
+        <property name="suffix" value=".jsp"/>
+    </bean>
+</beans>

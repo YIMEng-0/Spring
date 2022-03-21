@@ -7,11 +7,25 @@
     <option name="priority" value="Medium" />
     <option name="excludeFilter" value="" />
   </component>
+  <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/spring-mvc" />
+    <file type="web" url="file://$PROJECT_DIR$/spring-mvc1" />
+    <file type="web" url="file://$PROJECT_DIR$/spring-mvc2" />
+    <file type="web" url="file://$PROJECT_DIR$/spring-mvc3" />
+    <file type="web" url="file://$PROJECT_DIR$/spring-web" />
+    <file type="web" url="file://$PROJECT_DIR$/spring-集成web" />
+  </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/spring-demo1/pom.xml" />
         <option value="$PROJECT_DIR$/spring-ioc-anno/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-集成web/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-web/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-mvc/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-mvc1/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-mvc2/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-mvc3/pom.xml" />
       </list>
     </option>
   </component>

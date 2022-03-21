@@ -20,6 +20,7 @@ import javax.sql.DataSource;
  *      可以放置一些简单的配置；
  */
 // 申明这是一个配置文件
+    // 申明这个是配置文件，那么 xml 配置文件就可以
 @Configuration
 // <context:component-scan base-package="com.luobin"></context:component-scan>
 @ComponentScan("com.luobin") // 进行注解的扫描
