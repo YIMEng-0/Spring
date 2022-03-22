@@ -16,6 +16,9 @@ import lombok.NoArgsConstructor;
  * 加上其无参数构造器的注解
  */
 
+/**
+ * pojo 类 为了方便与数据库打交道，将数据封装成为对象的形式方便后端的接收
+ */
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
