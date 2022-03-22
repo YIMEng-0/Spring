@@ -19,6 +19,7 @@ import java.util.List;
 @RequestMapping("/book")
 public class BookController {
     //=================================查询所有书籍
+
     @Autowired
     @Qualifier("BookServiceImpl")
     private BookService bookService;
@@ -32,6 +33,7 @@ public class BookController {
     }
 
     //=================================添加书籍
+
     @RequestMapping("/toAddBook")
     public String toAddPaper() {
         return "addBook";
@@ -39,15 +41,22 @@ public class BookController {
 
     @RequestMapping("/addBook")
     public String addPaper(Books books) {
-        System.out.println(books);
         bookService.addBook(books);
         System.out.println(books);
         return "redirect:/book/allBook";
     }
 
-    //=================================
+    //=================================修改书籍
+    @RequestMapping("/uodateBook")
+    public String updateBook() {
+        return "allBook";
+    }
 
-    //=================================
+    //=================================删除书籍
+    @RequestMapping("/deleteBook")
+    public String deleteBook() {
+        return "allBook";
+    }
 
     //=================================
 }
