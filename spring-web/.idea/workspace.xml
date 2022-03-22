@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="6d441a2c-e400-42a8-a59e-1eb817838c76" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-mvc3/src/main/java/com/luobin/controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-mvc3/src/main/java/com/luobin/controller/UserJsonController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-mvc3/src/main/java/com/luobin/filter/EncodingFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-mvc3/src/main/java/com/luobin/pojo/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-mvc3/src/main/webapp/WEB-INF/jsontest.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/$PROJECT_FILE$" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ssm-build/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ssm-build/readMe.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ssm-build/src/main/java/com/luobin/controller/BookController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ssm-build/src/main/java/com/luobin/dao/BookMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ssm-build/src/main/java/com/luobin/dao/BookMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ssm-build/src/main/java/com/luobin/pojo/Books.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ssm-build/src/main/java/com/luobin/service/BookService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ssm-build/src/main/java/com/luobin/service/BookServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ssm-build/src/main/resources/applicationContext.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ssm-build/src/main/resources/database.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ssm-build/src/main/resources/mybatis-config.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ssm-build/src/main/resources/spring-dao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ssm-build/src/main/resources/spring-mvc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ssm-build/src/main/resources/spring-service.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ssm-build/src/main/webapp/WEB-INF/jsp/allBook.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ssm-build/src/main/webapp/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-mvc3/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-mvc3/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-mvc3/src/main/java/com/luobin/controller/ControllerTest3.java" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-mvc3/src/main/java/com/luobin/controller/ControllerTest3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-mvc3/src/main/java/com/luobin/controller/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-mvc3/src/main/java/com/luobin/controller/HelloController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-mvc3/src/main/java/com/luobin/controller/HelloController1有一些解释.java" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-mvc3/src/main/java/com/luobin/controller/HelloController1有一些解释.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-mvc3/src/main/java/com/luobin/controller/RestFulController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-mvc3/src/main/java/com/luobin/controller/RestFulController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-mvc3/src/main/webapp/WEB-INF/jsp/hello.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-mvc3/src/main/webapp/WEB-INF/jsp/test.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-mvc3/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-mvc3/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-web.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ssm-build/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../ssm-build/src/main/webapp/index.html" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="26iih5RF5aOrvmxIYfv44lqeeh4" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="settings.editor.selected.configurable" value="MTHome" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6d441a2c-e400-42a8-a59e-1eb817838c76" name="Changes" comment="" />
+      <created>1647912923692</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1647912923692</updated>
+      <workItem from="1647912924870" duration="36000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

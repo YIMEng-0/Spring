@@ -14,6 +14,7 @@
     <file type="web" url="file://$PROJECT_DIR$/spring-mvc3" />
     <file type="web" url="file://$PROJECT_DIR$/spring-web" />
     <file type="web" url="file://$PROJECT_DIR$/spring-集成web" />
+    <file type="web" url="file://$PROJECT_DIR$/ssm-build" />
   </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
@@ -26,6 +27,7 @@
         <option value="$PROJECT_DIR$/spring-mvc1/pom.xml" />
         <option value="$PROJECT_DIR$/spring-mvc2/pom.xml" />
         <option value="$PROJECT_DIR$/spring-mvc3/pom.xml" />
+        <option value="$PROJECT_DIR$/ssm-build/pom.xml" />
       </list>
     </option>
   </component>

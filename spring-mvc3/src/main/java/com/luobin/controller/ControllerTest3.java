@@ -17,6 +17,6 @@ public class ControllerTest3 {
 
         model.addAttribute("","");
 
-        return "hello";
+        return "test";
     }
 }

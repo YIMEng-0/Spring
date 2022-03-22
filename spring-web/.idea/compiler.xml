@@ -2,24 +2,12 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
-      <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="spring-ioc-anno" />
-        <module name="spring-demo1" />
-        <module name="spring-mvc" />
-        <module name="spring-mvc1" />
-        <module name="spring-mvc2" />
-        <module name="spring-mvc3" />
-        <module name="ssm-build" />
         <module name="spring-web" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="Spring" target="8" />
-      <module name="spring-集成web" target="1.8" />
-    </bytecodeTargetLevel>
   </component>
 </project>

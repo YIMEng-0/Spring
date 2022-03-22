@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+    <!--配置数据源 交给 Spring 去做 Mybatis 这里就不写了，也就是在 spring-dao.xml 里面进行数据库的连接配置-->
+    <!--原来单一的使用 MyBatis 的时候，都是需要在 MyBatis 里面进行配置的-->
+
+    <!--目的是给参数加上去别名 这个别名在 pojo 下面，books-->
+    <typeAliases>
+        <package name="com.luobin.pojo"/>
+    </typeAliases>
+
+    <!--配置映射文件，可以找到 Mapper 文件-->
+    <mappers>
+        <mapper class="com.luobin.dao.BookMapper"/>
+    </mappers>
+</configuration>

@@ -1,6 +1,5 @@
 package com.luobin.controller;
 
-import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
@@ -26,6 +25,6 @@ public class HelloController1有一些解释 {
         // model 就是向着模型中添加的数值，可以直接在 jsp 页面取出来并且进行渲染
         model.addAttribute("msg", "HelloSpringMVCAnnotation");
 
-        return "hello"; // 会被视图解析器进行处理,跳转到 hello.jsp 相当于一个跳转页面，在配置文件中会进行自动的拼接
+        return "test"; // 会被视图解析器进行处理,跳转到 test.jsp 相当于一个跳转页面，在配置文件中会进行自动的拼接
     }
 }
