@@ -11,7 +11,7 @@
     <!--1、关联数据库配置文件-->
     <context:property-placeholder location="classpath:database.properties"/>
 
-    <!--连接池-->
+    <!--连接池 下面会在 spring-service 里面的事务管理中，需要把这个 dataSource 注入进去，-->
     <bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource">
         <property name="driverClass" value="${jdbc.driver}"/>
         <property name="jdbcUrl" value="${jdbc.url}"/>
@@ -39,6 +39,7 @@
     </bean>
 
     <!-- 4.配置扫描Dao接口包，动态实现Dao接口注入到spring容器中 -->
+    <!--这个操作可以将 sqlSessionFactory 放在 Sprng 容器中；也是可以把 Dao 下面的 BookMapper 放在容器中-->
     <!--解释 ：https://www.cnblogs.com/jpfss/p/7799806.html-->
     <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
         <!-- 注入sqlSessionFactory -->

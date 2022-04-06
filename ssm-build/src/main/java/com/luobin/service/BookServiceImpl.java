@@ -30,7 +30,7 @@ public class BookServiceImpl implements BookService{
     }
 
     @Override
-    public int updateBookById(Books book) {
+    public int updateBook(Books book) {
         return bookMapper.updateBookById(book);
     }
 

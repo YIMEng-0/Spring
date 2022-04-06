@@ -8,6 +8,12 @@
    http://www.springframework.org/schema/context/spring-context.xsd">
 
     <!-- 扫描service相关的bean -->
+    <!--
+        创建spring项目的时候在xml配置文件中都会配置这个标签，配置完这个标签后，
+        spring就会去自动扫描base-package对应的路径或者该路径的子包下面的java文件，
+        如果扫描到文件中带有@Service,@Component,@Repository,@Controller等这些注解的类，
+        则把这些类注册为bean;
+    -->
     <context:component-scan base-package="com.luobin.service" />
 
     <import resource="classpath:spring-dao.xml"/> <!--// 解决 bookMapper 的爆红操作-->
@@ -17,7 +23,7 @@
         <property name="bookMapper" ref="bookMapper"/>
     </bean>
 
-    <!-- 配置事务管理器 -->
+    <!-- 配置事务管理器 因为在增删改的操作的时候，需要事务的支持 -->
     <bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
         <!-- 注入数据库连接池 -->
         <property name="dataSource" ref="dataSource" />

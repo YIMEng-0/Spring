@@ -11,6 +11,7 @@
         <package name="com.luobin.pojo"/>
     </typeAliases>
 
+    <!--配置映射文件，可以找到 Mapper 文件-->
     <mappers>
         <mapper class="com.luobin.dao.BookMapper"/>
     </mappers>

@@ -29,8 +29,6 @@ public class HelloServlet extends HttpServlet {
 
         // 转发
         req.getRequestDispatcher("/WEB-INF/jsp/test.jsp").forward(req, resp);
-
-
     }
 
     @Override

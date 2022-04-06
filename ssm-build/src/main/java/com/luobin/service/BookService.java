@@ -16,7 +16,7 @@ public interface BookService {
     int deleteBookById(int id);
 
     // 修改一本书
-    int updateBookById(Books book);
+    int updateBook(Books book);
 
     // 查询一本书
     Books queryBookById(int id);

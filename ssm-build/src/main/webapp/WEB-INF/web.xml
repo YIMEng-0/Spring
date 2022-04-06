@@ -11,17 +11,20 @@
         <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
         <init-param>
             <param-name>contextConfigLocation</param-name>
+            <!--这里如果只是配置了 springmvc 的话会出现问题-->
             <!--一定要注意:我们这里加载的是总的配置文件，之前被这里坑了！-->
             <param-value>classpath:applicationContext.xml</param-value>
         </init-param>
         <load-on-startup>1</load-on-startup>
     </servlet>
     <servlet-mapping>
+        <!--进行请求的过滤-->
         <servlet-name>DispatcherServlet</servlet-name>
         <url-pattern>/</url-pattern>
     </servlet-mapping>
 
     <!--encodingFilter-->
+    <!--对于乱码问题的解决-->
     <filter>
         <filter-name>encodingFilter</filter-name>
         <filter-class>

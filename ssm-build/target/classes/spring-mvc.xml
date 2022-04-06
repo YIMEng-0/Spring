@@ -13,17 +13,19 @@
     <!-- 配置SpringMVC -->
     <!-- 1.开启SpringMVC注解驱动 -->
     <mvc:annotation-driven />
+
     <!-- 2.静态资源默认servlet配置-->
     <mvc:default-servlet-handler/>
 
     <!-- 3.配置jsp 显示ViewResolver视图解析器 -->
     <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
         <property name="viewClass" value="org.springframework.web.servlet.view.JstlView" />
-        <property name="prefix" value="/WEB-INF/jsp/" />
+        <property name="prefix" value="/WEB-INF/jsp/"/>
         <property name="suffix" value=".jsp" />
     </bean>
 
     <!-- 4.扫描web相关的bean -->
+    <!--因为是 MVC 的配置文件，本质上面就是对于请求的分发，这里说明控制器在什么位置方便，让 Spring 知道去什么位置找到控制器并且执行相关的代码-->
     <context:component-scan base-package="com.luobin.controller" />
 
 </beans>

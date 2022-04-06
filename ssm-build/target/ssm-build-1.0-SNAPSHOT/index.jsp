@@ -9,6 +9,7 @@
                 color: black;
                 font-size: 18px;
             }
+
             h3 {
                 width: 180px;
                 height: 38px;
@@ -22,6 +23,11 @@
     </head>
     <body>
 
+        <%--
+                 ${pageContext.request.contextPath }是一个jsp内部提供的，帮我们自动匹配上下文环境的，
+                 不需要我们像以前一样把代码写死
+                 自动匹配到的绝对地址，保证项目的正常运行
+        --%>
         <h3>
             <a href="${pageContext.request.contextPath}/book/allBook">点击进入列表页</a>
         </h3>
